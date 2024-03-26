@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --color:#be9c79;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    background-color:#fafafa;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--color);
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+.sub-heading{
+    background: url(images/heading-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+}
+
+.sub-heading h1{
+    color: var(--color);
+    font-size: 4rem;
+    font-family: 'Merienda One', cursive;
+}
+
+.kopi h1{
+    color: var(--color);
+    font-size: 4rem;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+    padding: 20px;
+}
+.frappe h1 {
+    color: var(--color);
+    font-size: 4rem; 
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+    padding: 20px;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--color);
+    color: var(--color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--color);
+    color: #fff;
+}
+
+
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #e9d5c0;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #222;
+}
+
+.header .logo i{
+    color: var(--color);
+}
+
+
+/* end */
+
+
+
+
+/* menu */
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border: .2rem solid rgba(0,0,0,.1);
+    margin-top: 5rem;
+}
+
+.menu .box-container .box .image{
+    padding-bottom: 2.5rem;
+    margin-top: -6rem;
+}
+
+.menu .box-container .box .image img{
+    height: 25rem;
+}
+
+.menu .box-container .box .content h3{
+    color: #222;
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+
+.menu .box-container .box .content .stars i{
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.menu .box-container .box .content .price{
+    color: var(--color);
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.menu .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    color: #222;
+    font-size: 1.5rem;
+}
+
+.menu .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: .1rem solid var(--color);
+    color: var(--color);
+    margin: .3rem;
+}
+
+.menu .box-container .box .icons a:hover{
+    background: var(--color);
+    color: #fff;
+}
+
+/* end */
+
+
